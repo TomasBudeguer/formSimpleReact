@@ -1,10 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Container } from "react-bootstrap";
+import Formulario from './components/Formulario'
+import './style.css'
 
 function App() {
   return (
-    <div>
-      <h1>Titulo prueba</h1>
-    </div>
+    <Container>
+      <h1 className="text-center bg-danger text-white my-5 py-3">Formulario</h1>
+      <Formulario></Formulario>
+    </Container>
   );
 }
 
