@@ -34,6 +34,7 @@ const Formulario = () => {
           placeholder="Juan Bautista"
           onChange={(e) => setNombre(e.target.value)}
           value={nombre}
+          required
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicApellido">
@@ -43,6 +44,7 @@ const Formulario = () => {
           placeholder="Perez"
           onChange={(e) => setApellido(e.target.value)}
           value={apellido}
+          required
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicDNI">
@@ -52,6 +54,7 @@ const Formulario = () => {
           placeholder="12345678"
           onChange={(e) => setDni(e.target.value)}
           value={dni}
+          required
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -61,6 +64,7 @@ const Formulario = () => {
           placeholder="juanperez@gmail.com"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
+          required
         />
       </Form.Group>
       <Button variant="primary" type="submit">
